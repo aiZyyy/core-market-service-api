@@ -22,5 +22,6 @@ public class AppApplyForm {
     @NotBlank(message = "app名称不能为空")
     private String appName;
 
+    @NotBlank(message = "公司名称不能为空")
     private String companyName;
 }
