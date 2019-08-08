@@ -1,7 +1,9 @@
 package com.sixi.core.marketservice.api;
 
 import com.sixi.core.marketservice.domain.form.AppApplyForm;
+import com.sixi.core.marketservice.domain.form.AppIdForm;
 import com.sixi.core.marketservice.domain.vo.AppApplyVo;
+import com.sixi.core.marketservice.domain.vo.AppPublicKeyVo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,4 +26,10 @@ public interface AppApplyServiceApi {
      */
     @PostMapping("/app/apply")
     AppApplyVo apply(@RequestBody @Valid AppApplyForm applyForm);
+
+    /**
+     * 根据APPId查询用户公钥
+     */
+    @PostMapping("/app/selectpublickey")
+    AppPublicKeyVo selectPublicKey(@RequestBody @Valid AppIdForm appPublicKeyForm);
 }
