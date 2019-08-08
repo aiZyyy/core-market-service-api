@@ -17,12 +17,4 @@
         <version>2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.sixi.common</groupId>
-            <artifactId>common-snowflake-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 </project>
